@@ -82,7 +82,7 @@ export default function wrapPicker(Picker: React.ComponentClass<any>, defaultFor
 
     getDefaultLocale = () => {
       const locale = require('./locale/en_US');
-      const defaultlocale = (locale.default || locale);
+      const defaultlocale = locale.default;
       const result = {
         ...defaultlocale,
         ...this.props.locale,
